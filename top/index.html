@@ -47,17 +47,17 @@
   };
 </script>
 
-  <meta name="description" content="404">
+  <meta name="description" content="AV.initialize(&quot;VfPelwGQ8PfrWRhnmi06Fc1L-gzGzoHsz&quot;, &quot;DSWWKdsJalDNSKNCUzzYfHMV&quot;);    var time&#x3D;0   var title&#x3D;&quot;&quot;   var url&#x3D;&quot;&quot;   var query &#x3D; new AV.Query(&amp;apos;Counter&amp;apos;);   query.notEqualTo(&amp;apos;id&amp;apos;,0);   query.d">
 <meta property="og:type" content="website">
-<meta property="og:title" content="404">
-<meta property="og:url" content="https:&#x2F;&#x2F;valentj.github.io&#x2F;404&#x2F;index.html">
+<meta property="og:title" content="Fun">
+<meta property="og:url" content="https:&#x2F;&#x2F;valentj.github.io&#x2F;top&#x2F;index.html">
 <meta property="og:site_name" content="Fun">
-<meta property="og:description" content="404">
+<meta property="og:description" content="AV.initialize(&quot;VfPelwGQ8PfrWRhnmi06Fc1L-gzGzoHsz&quot;, &quot;DSWWKdsJalDNSKNCUzzYfHMV&quot;);    var time&#x3D;0   var title&#x3D;&quot;&quot;   var url&#x3D;&quot;&quot;   var query &#x3D; new AV.Query(&amp;apos;Counter&amp;apos;);   query.notEqualTo(&amp;apos;id&amp;apos;,0);   query.d">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-12-06T12:56:25.342Z">
+<meta property="og:updated_time" content="2019-12-06T14:48:56.547Z">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://valentj.github.io/404/">
+<link rel="canonical" href="https://valentj.github.io/top/">
 
 
 <script id="page-configurations">
@@ -71,7 +71,7 @@
   };
 </script>
 
-  <title>404 | Fun
+  <title> | Fun
   </title>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144763045-2"></script>
@@ -118,6 +118,7 @@
   <link rel="stylesheet" href="/live2d-widget/font-awesome.min.css">
   <script src="/live2d-widget/autoload.js"></script>
 
+<link rel="alternate" href="/atom.xml" title="Fun" type="application/atom+xml">
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -238,7 +239,7 @@
     <div class="post-block" lang="zh-CN">
       <header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">404
+<h1 class="post-title" itemprop="name headline">
 </h1>
 
 <div class="post-meta">
@@ -252,16 +253,31 @@
       
       
       <div class="post-body">
-          <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>404</title>
-<link rel="alternate" href="/atom.xml" title="Fun" type="application/atom+xml">
-</head>
-<body>
-<script type="text/javascript" src="//qzonestyle.gtimg.cn/qzone/hybrid/app/404/search_children.js" charset="utf-8" homePageUrl="/" homePageName="返回"></script> 
-</body></html>
+          <div id="top"></div>
+<script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+<script>AV.initialize("VfPelwGQ8PfrWRhnmi06Fc1L-gzGzoHsz", "DSWWKdsJalDNSKNCUzzYfHMV");</script>
+<script type="text/javascript">
+  var time=0
+  var title=""
+  var url=""
+  var query = new AV.Query('Counter');
+  query.notEqualTo('id',0);
+  query.descending('time');
+  query.limit(1000);
+  query.find().then(function (todo) {
+    for (var i=0;i<1000;i++){
+      var result=todo[i].attributes;
+      time=result.time;
+      title=result.title;
+      url=result.url;
+      // var content="<a href='"+"https://valentj.github.io"+url+"'>"+title+"</a>"+"<br>"+"<font color='#fff'>"+"阅读次数："+time+"</font>"+"<br><br>";
+      var content="<p>"+"<font color='#1C1C1C'>"+"【文章热度:"+time+"℃】"+"</font>"+"<a href='"+"https://valentj.github.io"+url+"'>"+title+"</a>"+"</p>";
+      document.getElementById("top").innerHTML+=content
+    }
+  }, function (error) {
+    console.log("error");
+  });
+</script>
       </div>
       
       
