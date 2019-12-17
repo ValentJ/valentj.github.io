@@ -1217,7 +1217,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ffff37;
+  background: #4517ff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1524,6 +1524,81 @@ pre .javascript .function {
   }
   50%, 70% {
     transform: scale(1.1);
+  }
+}
+@media (max-width: 567px) {
+  .content-wrap {
+    padding: initial !important;
+  }
+  .posts-expand {
+    margin: initial !important;
+    padding-top: 8px !important;
+  }
+  .posts-expand .post-header {
+    padding: 0 18px;
+  }
+  .posts-expand .post-meta {
+    margin: 3px 0 10px 0 !important;
+  }
+  .post-block {
+    margin-top: initial !important;
+    padding: 8px 0 !important;
+  }
+  .post-body h1,
+  .post-body h2,
+  .post-body h3,
+  .post-body h4,
+  .post-body h5,
+  .post-body h6 {
+    margin: 10px 18px 8px;
+  }
+  .post-body .note h1,
+  .post-body .tabs .tab-content .tab-pane h1,
+  .post-body .note h2,
+  .post-body .tabs .tab-content .tab-pane h2,
+  .post-body .note h3,
+  .post-body .tabs .tab-content .tab-pane h3,
+  .post-body .note h4,
+  .post-body .tabs .tab-content .tab-pane h4,
+  .post-body .note h5,
+  .post-body .tabs .tab-content .tab-pane h5,
+  .post-body .note h6,
+  .post-body .tabs .tab-content .tab-pane h6 {
+    margin: 0 5px;
+  }
+  .post-body > p {
+    margin: 0 0 10px 0;
+    padding: 0 18px;
+  }
+  .post-body > ul {
+    margin-inline-end: 1em;
+  }
+  .post-body > blockquote {
+    margin: 0 18px;
+  }
+  .post-body > span.exturl {
+    margin-left: 18px;
+  }
+  .post-body > .post-button a {
+    margin-left: 18px;
+  }
+  .post-body .note > p,
+  .post-body .tabs .tab-content .tab-pane > p {
+    padding: 0 5px;
+  }
+  .post-body img,
+  .post-body video {
+    margin-bottom: 10px !important;
+  }
+  .post-body .note {
+    margin-bottom: 10px !important;
+    padding: 10px !important;
+  }
+  .post-body .tabs .tab-content .tab-pane {
+    padding: 10px 10px 0 10px !important;
+  }
+  .post-nav {
+    padding-bottom: 2px;
   }
 }
 .back-to-top {
@@ -2518,128 +2593,45 @@ embed {
   -moz-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
-/* 归档页样式 began */
-.page-archive .archive-page-counter {
-  font-size: 18px;
-  background-color: #49b1f5;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-radius: 8px;
-  color: #fff;
+/*更好的侧边滚动条*/
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
 }
-@media (max-width: 767px) {
-  .page-archive .archive-page-counter {
-    font-size: 16px;
-  }
+::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
 }
-.my-post-time {
-  font-size: 11px;
-  position: absolute;
-  color: #fff;
-  background-color: #49b1f5;
-  border-radius: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin-left: 15px;
+::-webkit-scrollbar-button:start:increment,
+::-webkit-scrollbar-button:end:decrement {
+  display: none;
 }
-.mypost {
-  position: relative;
-  margin-bottom: 1rem;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-a.my-post-title-link:before {
-  top: 10px;
-  width: 18px;
-  height: 18px;
-  content: "📚";
-  margin-right: 5px;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: 15px;
-  line-height: 18px;
-}
-.my-post:hover {
-  transform: scale(1.1);
-  box-shadow: 10px 10px 15px 2px rgba(0,0,0,0.12), 0 0 6px 0 rgba(104,104,105,0.1);
-  border-radius: 30px;
-  width: 400px;
-  padding: 1px 10px;
-  margin-left: 25px;
-  font-size: 16px;
-  transition-duration: 0.15s;
-}
-@media (max-width: 767px) {
-  .my-post:hover {
-    width: 260px;
-    margin-left: 18px;
-  }
-}
-a.my-post-title-link {
-  text-decoration: none;
-  font-size: 15px;
-  font-weight: 400;
-}
-@media (max-width: 767px) {
-  a.my-post-title-link {
-    font-size: 14px;
-  }
-}
-.my-post-title {
+::-webkit-scrollbar-corner {
   display: block;
-  margin-left: 4.5rem;
-  color: #4c4948;
-  text-decoration: none;
-  font-size: 0.8rem;
-  cursor: pointer;
 }
-.my-post-header {
-  position: top;
-  margin-bottom: 1rem;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-.my-post-meta {
-  position: absolute;
-  color: #99a9bf;
-  width: 80px;
-  color: #114142;
-}
-div.post-block.tag .collection-title h2 {
-  border-width: 1px;
-  border-style: solid;
-  border-color: #3f3f3f;
-  border-radius: 20px;
-  font-size: 22px;
-  background-color: #b4e8fa;
-  padding: 2px 15px;
-  letter-spacing: 1.5px;
-  box-sizing: border-box;
-  color: #3f3f3f;
-  display: inline-block;
-  margin: 10px 0 10px;
-  text-align: center;
-}
-@media (max-width: 767px) {
-  div.post-block.tag .collection-title h2 {
-    font-size: 18px;
-  }
-}
-.category-list-link:hover {
-  transform: scale(1.1);
-  box-shadow: 10px 10px 15px 2px rgba(0,0,0,0.12), 0 0 6px 0 rgba(104,104,105,0.1);
+::-webkit-scrollbar-thumb {
   border-radius: 8px;
-  padding: 1px 1px;
-  margin-left: 5px;
-  font-size: 16px;
-  transition-duration: 0.15s;
+  background-color: rgba(0,0,0,0.2);
 }
-/* 归档页样式 end */
+::-webkit-scrollbar-thumb:hover {
+  border-radius: 8px;
+  background-color: rgba(0,0,0,0.5);
+}
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-thumb {
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
+}
+::-webkit-scrollbar-track:hover {
+  background-color: rgba(0,0,0,0.15);
+}
+::-webkit-scrollbar-button:start {
+  width: 10px;
+  height: 10px;
+/*background: url(../images/scrollbar_arrow.png) no-repeat 0 0;*/
+/*可以添加滚动条样式*/
+}
+/* 归档页样式 began */
 .post {
   margin-top: 60px;
   margin-bottom: 60px;
