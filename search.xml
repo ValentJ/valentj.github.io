@@ -47,10 +47,10 @@
 
 <h1 id="安装PHP7"><a href="#安装PHP7" class="headerlink" title="安装PHP7"></a>安装PHP7</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">//安装依赖文件</span></pre></td></tr><tr><td class="code"><pre><span class="line">[root@localhost ~]<span class="comment"># yum install gcc-c++ libxml2 libxml2-devel openssl openssl-devel bzip2 bzip2-devel libcurl libcurl-devel libjpeg libjpeg-devel libpng libpng-devel freetype freetype-devel gmp gmp-devel libmcrypt libmcrypt-devel readline readline-devel libxslt libxslt-devel</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">//安装php组新版本rpm</span></pre></td></tr><tr><td class="code"><pre><span class="line">[root@localhost ~]<span class="comment"># rpm -Uvh https://mirror.webtatic.com/yum/el7/epel-release.rpm</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">Retrieving https://mirror.webtatic.com/yum/el7/epel-release.rpm</span></pre></td></tr><tr><td class="code"><pre><span class="line">warning: /var/tmp/rpm-tmp.F1aZTS: Header V4 RSA/SHA1 Signature, key ID 62e74ca5: NOKEY</span></pre></td></tr><tr><td class="code"><pre><span class="line">Preparing...                          <span class="comment">################################# [100%]</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">Updating / installing...</span></pre></td></tr><tr><td class="code"><pre><span class="line">   1:epel-release-7-5                 <span class="comment">################################# [100%]</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">[root@localhost ~]<span class="comment"># rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">Retrieving https://mirror.webtatic.com/yum/el7/webtatic-release.rpm</span></pre></td></tr><tr><td class="code"><pre><span class="line">warning: /var/tmp/rpm-tmp.rnxYY3: Header V4 RSA/SHA1 Signature, key ID 62e74ca5: NOKEY</span></pre></td></tr><tr><td class="code"><pre><span class="line">Preparing...                          <span class="comment">################################# [100%]</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">Updating / installing...</span></pre></td></tr><tr><td class="code"><pre><span class="line">   1:webtatic-release-7-3             <span class="comment">################################# [100%]</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">[root@localhost ~]<span class="comment"># yum search php71   //查看有哪些php最新版的安装包文件</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">[root@localhost ~]<span class="comment"># yum install mod_php71w php71w-mysqlnd php71w-cli php71w-fpm   //安装php7最新版</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">[root@localhost ~]<span class="comment"># php -v    //查看php版本</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">PHP 7.1.5 (cli) (built: May 12 2017 21:54:58) ( NTS )</span></pre></td></tr><tr><td class="code"><pre><span class="line">Copyright (c) 1997-2017 The PHP Group</span></pre></td></tr><tr><td class="code"><pre><span class="line">Zend Engine v3.1.0, Copyright (c) 1998-2017 Zend Technologies</span></pre></td></tr><tr><td class="code"><pre><span class="line">[root@localhost ~]<span class="comment"># systemctl restart httpd    //重启Apache</span></span></pre></td></tr></table></figure>]]></content>
       <categories>
-        <category>centos</category>
+        <category>Linux</category>
       </categories>
       <tags>
-        <tag>centos</tag>
+        <tag>Linux</tag>
         <tag>lamp</tag>
       </tags>
   </entry>
@@ -177,7 +177,7 @@
         <category>破解</category>
       </categories>
       <tags>
-        <tag>Sandboxie破解</tag>
+        <tag>破解</tag>
       </tags>
   </entry>
   <entry>
@@ -222,7 +222,7 @@
         <category>破解</category>
       </categories>
       <tags>
-        <tag>Sublime破解</tag>
+        <tag>破解</tag>
       </tags>
   </entry>
   <entry>
@@ -262,7 +262,7 @@
         <category>破解</category>
       </categories>
       <tags>
-        <tag>JET-BRAINS破解</tag>
+        <tag>破解</tag>
       </tags>
   </entry>
 </search>
