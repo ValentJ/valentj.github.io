@@ -47,28 +47,32 @@
 </script>
 
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Fun">
-<meta property="og:url" content="https:&#x2F;&#x2F;valentj.github.io&#x2F;index.html">
+  <meta name="description" content="安装Apache&amp;amp;Nginx升级一下yum源(非必须)1yum update Apache安装与配置Apache下载安装1yum list |grep httpd    &#x2F;&#x2F;查看有哪些Apache可以安装2yum install -y httpd    &#x2F;&#x2F;安装Apache指令3http -v               &#x2F;&#x2F;安装完成后查看Apache版本指令4显示内容如下5Server">
+<meta name="keywords" content="centos">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Lamp-Centos7">
+<meta property="og:url" content="https:&#x2F;&#x2F;valentj.github.io&#x2F;2019&#x2F;12&#x2F;29&#x2F;Lamp-Centos7&#x2F;index.html">
 <meta property="og:site_name" content="Fun">
+<meta property="og:description" content="安装Apache&amp;amp;Nginx升级一下yum源(非必须)1yum update Apache安装与配置Apache下载安装1yum list |grep httpd    &#x2F;&#x2F;查看有哪些Apache可以安装2yum install -y httpd    &#x2F;&#x2F;安装Apache指令3http -v               &#x2F;&#x2F;安装完成后查看Apache版本指令4显示内容如下5Server">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-12-29T08:16:08.933Z">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://valentj.github.io/">
+<link rel="canonical" href="https://valentj.github.io/2019/12/29/Lamp-Centos7/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome: true,
-    isPost: false,
+    isHome: false,
+    isPost: true,
     isPage: false,
     isArchive: false
   };
 </script>
 
-  <title>Fun</title>
+  <title>Lamp-Centos7 | Fun</title>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144763045-2"></script>
     <script>
@@ -222,10 +226,10 @@
             
 
   <div class="posts-expand">
-        
+      
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://valentj.github.io/2019/12/29/Lamp-Centos7/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -239,8 +243,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/12/29/Lamp-Centos7/" class="post-title-link" itemprop="url">Lamp-Centos7</a>
+          Lamp-Centos7
         </h1>
 
         <div class="post-meta">
@@ -311,7 +314,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="安装Apache-amp-Nginx"><a href="#安装Apache-amp-Nginx" class="headerlink" title="安装Apache&amp;Nginx"></a>安装Apache&amp;Nginx</h1><h2 id="升级一下yum源-非必须"><a href="#升级一下yum源-非必须" class="headerlink" title="升级一下yum源(非必须)"></a>升级一下yum源(非必须)</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">yum update</span></pre></td></tr></table></figure>
+        <h1 id="安装Apache-amp-Nginx"><a href="#安装Apache-amp-Nginx" class="headerlink" title="安装Apache&amp;Nginx"></a>安装Apache&amp;Nginx</h1><h2 id="升级一下yum源-非必须"><a href="#升级一下yum源-非必须" class="headerlink" title="升级一下yum源(非必须)"></a>升级一下yum源(非必须)</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">yum update</span></pre></td></tr></table></figure>
 <h2 id="Apache安装与配置"><a href="#Apache安装与配置" class="headerlink" title="Apache安装与配置"></a>Apache安装与配置</h2><h3 id="Apache下载安装"><a href="#Apache下载安装" class="headerlink" title="Apache下载安装"></a>Apache下载安装</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">yum list |grep httpd    //查看有哪些Apache可以安装</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">yum install -y httpd    //安装Apache指令</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">http -v               //安装完成后查看Apache版本指令</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">显示内容如下</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">Server version: Apache/2.4.6 (CentOS)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">Server built:   Apr 12 2017 21:03:28</span></pre></td></tr></table></figure>
 
 
@@ -336,124 +339,62 @@
 
 
 <h1 id="安装PHP7"><a href="#安装PHP7" class="headerlink" title="安装PHP7"></a>安装PHP7</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">//安装依赖文件</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">[root@localhost ~]<span class="comment"># yum install gcc-c++ libxml2 libxml2-devel openssl openssl-devel bzip2 bzip2-devel libcurl libcurl-devel libjpeg libjpeg-devel libpng libpng-devel freetype freetype-devel gmp gmp-devel libmcrypt libmcrypt-devel readline readline-devel libxslt libxslt-devel</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">//安装php组新版本rpm</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">[root@localhost ~]<span class="comment"># rpm -Uvh https://mirror.webtatic.com/yum/el7/epel-release.rpm</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">Retrieving https://mirror.webtatic.com/yum/el7/epel-release.rpm</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">warning: /var/tmp/rpm-tmp.F1aZTS: Header V4 RSA/SHA1 Signature, key ID 62e74ca5: NOKEY</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">Preparing...                          <span class="comment">################################# [100%]</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">Updating / installing...</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">   1:epel-release-7-5                 <span class="comment">################################# [100%]</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">[root@localhost ~]<span class="comment"># rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">Retrieving https://mirror.webtatic.com/yum/el7/webtatic-release.rpm</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">warning: /var/tmp/rpm-tmp.rnxYY3: Header V4 RSA/SHA1 Signature, key ID 62e74ca5: NOKEY</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">Preparing...                          <span class="comment">################################# [100%]</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">Updating / installing...</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">   1:webtatic-release-7-3             <span class="comment">################################# [100%]</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">[root@localhost ~]<span class="comment"># yum search php71   //查看有哪些php最新版的安装包文件</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line">[root@localhost ~]<span class="comment"># yum install mod_php71w php71w-mysqlnd php71w-cli php71w-fpm   //安装php7最新版</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line">[root@localhost ~]<span class="comment"># php -v    //查看php版本</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">19</span></pre></td><td class="code"><pre><span class="line">PHP 7.1.5 (cli) (built: May 12 2017 21:54:58) ( NTS )</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">20</span></pre></td><td class="code"><pre><span class="line">Copyright (c) 1997-2017 The PHP Group</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">21</span></pre></td><td class="code"><pre><span class="line">Zend Engine v3.1.0, Copyright (c) 1998-2017 Zend Technologies</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">22</span></pre></td><td class="code"><pre><span class="line">[root@localhost ~]<span class="comment"># systemctl restart httpd    //重启Apache</span></span></pre></td></tr></table></figure>
-      
     </div>
 
 
     
     
     
+      
+
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>Valent
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="/https:/valentj.github.io/2019/12/29/Lamp-Centos7/" title="Lamp-Centos7">https://valentj.github.io/2019/12/29/Lamp-Centos7/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+      <!-- 文本结束标记-->
+<div>
+  
+    <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>Valent 感谢您的阅读-------------</div>
+    
+</div>
+  
+</div>
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+          
+          <div class="post-tags">
+              <a href="/tags/centos/" rel="tag"><i class="fa fa-tag"></i>centos</a>
+          </div>
 
         
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://valentj.github.io/2019/12/06/hello-world/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Valent">
-      <meta itemprop="description" content="">
-    </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Fun">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/12/06/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-12-06 14:47:48" itemprop="dateCreated datePublished" datetime="2019-12-06T14:47:48+08:00">2019-12-06</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-12-07 20:18:19" itemprop="dateModified" datetime="2019-12-07T20:18:19+08:00">2019-12-07</time>
-              </span>
-
-          
-            <span id="/2019/12/06/hello-world/" class="post-meta-item leancloud_visitors" data-flag-title="Hello World" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="fa fa-comment-o"></i>
-      </span>
-      <span class="post-meta-item-text">热度：</span>
-    
-    <a title="valine" href="/2019/12/06/hello-world/#comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2019/12/06/hello-world/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>357</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2019/12/06/hello-world/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2019/12/06/hello-world/" rel="prev" title="Hello World">
+      <i class="fa fa-chevron-left"></i> Hello World
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
@@ -461,12 +402,10 @@
 
   </div>
 
-  
-
-
 
           </div>
           
+    <div class="comments" id="comments"></div>
 
         </div>
           
@@ -491,6 +430,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#安装Apache-amp-Nginx"><span class="nav-number">1.</span> <span class="nav-text">安装Apache&amp;Nginx</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#升级一下yum源-非必须"><span class="nav-number">1.1.</span> <span class="nav-text">升级一下yum源(非必须)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Apache安装与配置"><span class="nav-number">1.2.</span> <span class="nav-text">Apache安装与配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Apache下载安装"><span class="nav-number">1.2.1.</span> <span class="nav-text">Apache下载安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关闭防火墙"><span class="nav-number">1.2.2.</span> <span class="nav-text">关闭防火墙</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#防火墙上开启80端口"><span class="nav-number">1.2.3.</span> <span class="nav-text">防火墙上开启80端口</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Ngixn安装与配置"><span class="nav-number">1.3.</span> <span class="nav-text">Ngixn安装与配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Ngixn安装"><span class="nav-number">1.3.1.</span> <span class="nav-text">Ngixn安装</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#MySql安装与配置"><span class="nav-number">2.</span> <span class="nav-text">MySql安装与配置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Mysql安装"><span class="nav-number">2.1.</span> <span class="nav-text">Mysql安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Mysql修改默认密码"><span class="nav-number">2.2.</span> <span class="nav-text">Mysql修改默认密码</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装PHP7"><span class="nav-number">3.</span> <span class="nav-text">安装PHP7</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
